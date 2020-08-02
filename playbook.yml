@@ -42,8 +42,10 @@
       state: present
       exposed_ports:
        - 80/tcp
+       - 80/udp
       published_ports:
        - 0.0.0.0:8086:80/tcp
+       - 0.0.0.0:8086:80/udp
       volumes:
        - /root/html/:/usr/local/apache2/htdocs/
 
